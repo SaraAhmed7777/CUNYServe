@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -23,7 +23,14 @@
       <h2>Join the Movement</h2>
       <p>Sign up to volunteer for upcoming events through your CUNY campus.</p>
 
-      <form method="POST" action="/join">
+      <!-- ✅ Update this email to your own -->
+      <form action="https://formsubmit.co/Sara.AhmedElsayed77@gmail.com" method="POST">
+        <!-- Optional: Disable CAPTCHA -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Optional: Redirect to thank you page -->
+        <input type="hidden" name="_next" value="https://yourdomain.github.io/thank-you.html">
+
         <label for="name">Full Name:</label>
         <input type="text" id="name" name="name" required>
 
